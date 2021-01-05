@@ -17,6 +17,7 @@
     height: auto;
     margin-right: 3rem;
     border-radius: 2rem;
+    box-shadow: 0 0 .6rem .5rem rgba(204, 215, 224, .5);
   }
 
   &__desc {
@@ -43,6 +44,7 @@
     font-family: 'Audiowide', cursive;
     text-align: center;
     font-size: 2.5rem;
+    margin-bottom: 1.5rem;
 
     &--about {
       text-shadow: 0 0 2.5rem #fb9136;
@@ -55,5 +57,27 @@
     &--work {
       text-shadow: 0 0 2.5rem #36fb46;
     }
+  }
+}
+
+.skill {
+  &__subtitle {
+    font-family: 'Audiowide', cursive;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  &__card {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__cardItem {
+    width: 46%;
+    border-radius: 2rem;
+    box-shadow: 0 0 .4rem .5rem rgba(209, 198, 218, 0.5) inset;
+    padding: 2rem;
+  }
+  &__desc {
+    margin-bottom: 1.5rem;
   }
 }
