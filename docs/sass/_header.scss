@@ -1,0 +1,31 @@
+.header {
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  padding: 1rem;
+  background: rgba(248, 251, 252, 0.8);
+  box-shadow: 0 0 .8rem .5rem rgba(108, 129, 138, 0.2);
+  &__nav {
+    display: flex;
+    justify-content: center;
+  }
+  .menu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-bottom: 0;
+    
+    &__item {
+      margin-right: 2rem;
+    }
+
+    &__link {
+      display: inline-block;
+      padding: .5rem 1rem;
+      color: #292a2c;
+      background: #edf3fa;
+      box-shadow: 0 0 .6rem .5rem rgba(204, 215, 224, .5);
+      border-radius: .5rem;
+    }
+  }
+}

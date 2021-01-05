@@ -1,0 +1,59 @@
+.main {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 8.2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+
+  &__image {
+    width: 300px;
+    height: auto;
+    margin-right: 3rem;
+    border-radius: 2rem;
+  }
+
+  &__desc {
+    padding-top: 1rem;
+  }
+
+  &__role {
+    font-size: .9rem;
+  }
+
+  &__name {
+    font-family: 'Audiowide', cursive;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.contents {
+  &__section {
+    margin-bottom: 3rem;
+  }
+
+  &__title {
+    font-family: 'Audiowide', cursive;
+    text-align: center;
+    font-size: 2.5rem;
+
+    &--about {
+      text-shadow: 0 0 2.5rem #fb9136;
+    }
+
+    &--skill {
+      text-shadow: 0 0 2.5rem #9c36fb;
+    }
+
+    &--work {
+      text-shadow: 0 0 2.5rem #36fb46;
+    }
+  }
+}
