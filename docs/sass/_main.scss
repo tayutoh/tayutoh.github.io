@@ -1,13 +1,15 @@
 .main {
   width: 100%;
   padding-top: 10.2rem;
+  padding-bottom: 4rem;
   position: relative;
   z-index: 2;
 }
 
 .profile {
-  max-width: 1000px;
+  max-width: 1040px;
   margin: 0 auto;
+  padding: 2rem;
   display: flex;
   justify-content: center;
   margin-bottom: 5rem;
@@ -73,8 +75,7 @@
 .about {
   &__card {
     margin-bottom: 4rem;
-    padding: 4rem 1rem;
-    background-size: cover;
+    padding: 4rem 2rem;
     position: relative;
     min-height: 500px;
     display: flex;
@@ -95,9 +96,11 @@
     }
     &--illust {
       background: url(../image/about_01.png) no-repeat center;
+      background-size: cover;
     }
     &--game {
       background: url(../image/about_02.png) no-repeat center;
+      background-size: cover;
     }
   }
   &__cardInner {
@@ -115,6 +118,14 @@
   }
 }
 
+@media (max-width: 800px) {
+  .about {
+    &__card {
+      min-height: 250px;
+    }
+  }
+}
+
 .skill {
   &__subtitle {
     font-family: 'Audiowide', cursive;
@@ -123,6 +134,7 @@
     margin-bottom: 1.5rem;
   }
   &__card {
+    padding: 0 2rem;
     margin-bottom: 5rem;
     display: flex;
     justify-content: space-between;
@@ -138,11 +150,27 @@
   }
 }
 
+@media (max-width: 800px) {
+  .skill {
+    &__card {
+      display: block;
+    }
+    &__cardItem {
+      width: 100%;
+      margin-bottom: 2rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
 .work {
   &__card {
     display: flex;
     justify-content: space-between;
     margin-bottom: 5rem;
+    padding: 0 2rem;
   }
   &__pic {
     width: 50%;
@@ -156,7 +184,7 @@
     padding-top: 1rem;
   }
   &__textCard {
-    padding-top: 1rem;
+    padding: 1rem 2rem 0;
     &Item {
       margin-bottom: .5rem;
       &:last-child {
@@ -166,5 +194,22 @@
   }
   &__title {
     margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .work {
+    &__card {
+      display: block;
+      margin-bottom: 2rem;
+    }
+    &__pic {
+      width: 100%;
+      margin-bottom: .5rem;
+    }
+    &__text {
+      width: 100%;
+      margin-bottom: 4rem;
+    }
   }
 }
