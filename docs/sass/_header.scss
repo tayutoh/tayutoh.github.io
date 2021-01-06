@@ -82,16 +82,108 @@
     font-size: 2rem;
     &__item {
       margin-right: 1rem;
+      transition-duration: .5s;
+      transition-property: transform;
       &:last-child {
         margin-right: 0;
+      }
+      &:hover {
+        transform: scale(1.1);
       }
     }
     &__link {
       color: #36424e;
-      transition-duration: .5s;
+      transition-duration: .3s;
       transition-property: color, box-shadow;
       &:hover {
         color: #056070;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .header {
+    padding: 0;
+    &__nav {
+      padding: 55px 0 0;
+    }
+    .logo {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 15px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      &::before {
+        width: 38px;
+        height: 38px;
+        display: block;
+        transform: scale(0.8);
+        border-radius: 50%;
+        background: rgba(243, 156, 74, 0.6);
+        box-shadow: 0 0 .8rem .5rem rgba(243, 156, 74, 0.4);
+      }
+    }
+    .menu {
+      width: 70%;
+      padding-left: 0;
+      
+      &__item {
+        margin-right: 0;
+        display: flex;
+        align-items: center;
+        flex-basis: calc(100%/3);
+      }
+  
+      &__link {
+        height: 100%;
+        padding: .5rem 1rem;
+        flex-grow: 1;
+        text-align: center;
+        line-height: 1.8;
+        box-shadow: 0 0 .3rem .2rem rgba(204, 215, 224, .5) inset;
+        border-radius: 0;
+        transition-duration: 0s;
+        transition-property: transform, background-color, box-shadow;
+        &:hover {
+          background-color: #edf3fa;
+          box-shadow: 0 0 .3rem .2rem rgba(204, 215, 224, .5) inset;
+          transform: scale(1);
+        }
+      }
+    }
+    .sns {
+      width: 30%;
+      padding-top: 1rem;
+      align-items: center;
+      font-size: 1.6rem;
+      &__item {
+        height: 100%;
+        transition-duration: 0s;
+        margin-right: 0;
+        flex-basis: 50%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        &:hover {
+          transform: scale(1);
+        }
+      }
+      &__link {
+        width: 100%;
+        height: 100%;
+        padding: .5rem .5rem;
+        color: #36424e;
+        background-color: #edf3fa;
+        display: inline-block;
+        line-height: 1.2;
+        box-shadow: 0 0 .3rem .2rem rgba(204, 215, 224, .5) inset;
+        transition-duration: 0s;
+        &:hover {
+          color: #36424e;
+        }
       }
     }
   }

@@ -6,6 +6,12 @@
   z-index: 2;
 }
 
+@media (max-width: 375px) {
+  .main {
+    padding-top: 8.8rem;
+  }
+}
+
 .profile {
   max-width: 1040px;
   margin: 0 auto;
@@ -41,6 +47,18 @@
   }
 }
 
+@media (max-width: 375px) {
+  .profile {
+    // padding: 2rem;
+    display: block;
+    margin-bottom: 3rem;
+    &__image {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}
+
 .contents {
   #skill,
   #work {
@@ -68,6 +86,14 @@
 
     &--work {
       text-shadow: 0 0 2.5rem #36fb46;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .contents {
+    &__section {
+      margin-bottom: 4.5rem;
     }
   }
 }
