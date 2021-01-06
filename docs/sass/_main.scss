@@ -1,23 +1,27 @@
 .main {
-  max-width: 1000px;
   width: 100%;
-  margin: 0 auto;
-  padding-top: 8.2rem;
+  padding-top: 10.2rem;
   position: relative;
   z-index: 2;
 }
 
 .profile {
+  max-width: 1000px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 
   &__image {
-    width: 300px;
+    width: 30rem;
     height: auto;
     margin-right: 3rem;
-    border-radius: 2rem;
-    box-shadow: 0 0 .6rem .5rem rgba(204, 215, 224, .5);
+    
+    &Item {
+      width: 100%;
+      border-radius: 2rem;
+      box-shadow: 0 0 .6rem .5rem rgba(204, 215, 224, .5);
+    }
   }
 
   &__desc {
@@ -36,15 +40,21 @@
 }
 
 .contents {
+  #skill,
+  #work {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
   &__section {
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
   }
 
   &__title {
     font-family: 'Audiowide', cursive;
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 4rem;
 
     &--about {
       text-shadow: 0 0 2.5rem #fb9136;
@@ -60,6 +70,51 @@
   }
 }
 
+.about {
+  &__card {
+    margin-bottom: 4rem;
+    padding: 4rem 1rem;
+    background-size: cover;
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 239, 228);
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      margin: auto;
+      background-color: rgba(75, 65, 53, 0.7);
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+    &--illust {
+      background: url(../image/about_01.png) no-repeat center;
+    }
+    &--game {
+      background: url(../image/about_02.png) no-repeat center;
+    }
+  }
+  &__cardInner {
+    max-width: 750px;
+    margin: 0 auto;
+    position: relative;
+  }
+  &__subtitle {
+    font-family: 'Audiowide', cursive;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  &__text {
+    line-height: 1.8;
+  }
+}
+
 .skill {
   &__subtitle {
     font-family: 'Audiowide', cursive;
@@ -68,6 +123,7 @@
     margin-bottom: 1.5rem;
   }
   &__card {
+    margin-bottom: 5rem;
     display: flex;
     justify-content: space-between;
   }
@@ -79,5 +135,36 @@
   }
   &__desc {
     margin-bottom: 1.5rem;
+  }
+}
+
+.work {
+  &__card {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+  }
+  &__pic {
+    width: 50%;
+    &Item {
+      width: 100%;
+      box-shadow: 0 0 .6rem .5rem rgba(192, 206, 191, 0.5);
+    }
+  }
+  &__text {
+    width: 42%;
+    padding-top: 1rem;
+  }
+  &__textCard {
+    padding-top: 1rem;
+    &Item {
+      margin-bottom: .5rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__title {
+    margin-bottom: 1rem;
   }
 }

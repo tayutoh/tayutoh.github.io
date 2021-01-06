@@ -5,53 +5,64 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Document</title>
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Ubuntu&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/reboot.css">
 <link rel="stylesheet" href="/css/style.css">
+<script src="https://kit.fontawesome.com/242fdb4ba5.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="background"></div>
   <header class="header">
     <nav class="header__nav">
-      <div class="logo"></div>
+      <div class="logo"><img src="/image/logo.png" alt="" class="logo__item"></div>
       <ul class="menu">
         <li class="menu__item"><a href="#about" class="menu__link">About</a></li>
         <li class="menu__item"><a href="#skill" class="menu__link">Skill</a></li>
         <li class="menu__item"><a href="#work" class="menu__link">Work</a></li>
       </ul>
+      <ul class="sns">
+        <li class="sns__item"><a href="https://twitter.com/tayutoh/" target="_blank" rel="noopener noreferrer" class="sns__link"><i class="fab fa-twitter"></i></a></li>
+        <li class="sns__item"><a href="https://github.com/tayutoh/" target="_blank" rel="noopener noreferrer" class="sns__link"><i class="fab fa-github-alt"></i></a></li>
+      </ul>
     </nav>
   </header>
   <div class="main">
     <div class="profile">
-      <img src="/image/profile.png" alt="" class="profile__image">
+      <div class="profile__image">
+        <img src="/image/profile.png" alt="" class="profile__imageItem">
+      </div>
       <div class="profile__desc">
         <div class="profile__role">フロントエンドエンジニアごくまれにデザイナ</div>
         <h1 class="profile__name">tayutoh</h1>
           <div class="profile__text">
           <p>フロントエンドエンジニアとして主に活動している、tayutoh（たゆとう）です。いろんな形でモノづくりをして行きたいと思い模索中です。</p>
-          <p>ご質問・お問い合わせは<a href="https://twitter.com/tayutoh" target="_blank" rel="noopener noreferrer">Twitter</a>にてお気軽にください。（フォローもお気軽に！）</p>
+          <p>ご質問・お問い合わせは<a href="https://twitter.com/tayutoh/" target="_blank" rel="noopener noreferrer">Twitter</a>にてお気軽にください。（フォローもお気軽に！）</p>
         </div>
       </div>
     </div>
     <div class="contents">
       <section id="about" class="contents__section">
         <h2 class="contents__title contents__title--about">About</h2>
-        <div class="about__text">
-          <h3 class="about__subtitle">Illust</h3>
-          <p class="about__text">
-            キャラクターのイラストをよく描きます。
-            2次創作を主に描いていますが、オリジナルも描きます。
-            Live2Dや3Dにも落とし込んでいきたいと思っています。
-          </p>
+        <div class="about__card about__card--illust">
+          <div class="about__cardInner">
+            <h3 class="about__subtitle">Illust</h3>
+            <p class="about__text">
+              キャラクターのイラストをよく描きます。
+              2次創作を主に描いていますが、オリジナルも描きます。
+              Live2Dや3Dにも落とし込んでいきたいと思っています。
+            </p>
+          </div>
         </div>
-        <div class="about__text">
-          <h3 class="about__subtitle">Game</h3>
-          <p class="about__text">
-            様々なジャンルのゲームをします。
-            主にインディーゲームや海外ゲームをSteamでやっています。
-            同人ゲームやソーシャルゲームもやります。
-            Unity推奨PCも入手したので、ゲーム作りもしていきたいです。
-          </p>
+        <div class="about__card about__card--game">
+          <div class="about__cardInner">
+            <h3 class="about__subtitle">Game</h3>
+            <p class="about__text">
+              様々なジャンルのゲームをします。
+              主にインディーゲームや海外ゲームをSteamでやっています。
+              同人ゲームやソーシャルゲームもやります。
+              Unity推奨PCも入手したので、ゲーム作りもしていきたいです。
+            </p>
+          </div>
         </div>
       </section>
       <section id="skill" class="contents__section">
@@ -92,53 +103,60 @@
             </div>
           </div>
         </div>
-      </div>
       </section>
       <section id="work" class="contents__section">
         <h2 class="contents__title contents__title--work">Work</h2>
-        <div class="work__text">
-          <img src="" alt="">
-          <h3>株式会社ホリゾン</h3>
-          <dl>
-            <dt>URL</dt>
-            <dd><a href="http://www.horizon21.co.jp/" target="_blank" rel="noopener noreferrer">http://www.horizon21.co.jp/</a></dd>
-          </dl>
-          <dl>
-            <dt>担当箇所</dt>
-            <dd>デザイン・コーディング・ロゴ作成</dd>
-          </dl>
-          <p>既存サイトのリニューアルを行いました。サイト構成はほぼそのままに、当時のトレンドを取り入れつつ見やすさとわかりやすさを目指しました。</p>
+        <div class="work__card">
+          <div class="work__pic">
+            <img src="/image/work_01.png" alt="株式会社ホリゾン" class="work__picItem">
+          </div>
+          <div class="work__text">
+            <h3 class="work__title">株式会社ホリゾン</h3>
+            <dl>
+              <dt>URL</dt>
+              <dd><a href="http://www.horizon21.co.jp/" target="_blank" rel="noopener noreferrer">http://www.horizon21.co.jp/</a></dd>
+            </dl>
+            <dl>
+              <dt>担当箇所</dt>
+              <dd>デザイン・コーディング・ロゴ作成</dd>
+            </dl>
+            <p>既存サイトのリニューアルを行いました。サイト構成はほぼそのままに、当時のトレンドを取り入れつつ見やすさとわかりやすさを目指しました。</p>
+          </div> 
         </div>
-        <div class="work__text">
-          <img src="" alt="">
-          <h3>ポートフォリオサイト</h3>
-          <dl>
-            <dt>URL</dt>
-            <dd><a href="http://www.tayutoh.github.io/" target="_blank" rel="noopener noreferrer">http://www.tayutoh.github.io/</a></dd>
-          </dl>
-          <dl>
-            <dt>担当箇所</dt>
-            <dd>サイト設計・デザイン・コーディング・ロゴ作成</dd>
-          </dl>
-          <p>当ポートフォリオサイトです。CSSを使用したアニメーションとシンプルな構造で、閲覧しやすさを目指しました。</p>
+        <div class="work__card">
+          <div class="work__pic">
+            <img src="/image/work_02.png" alt="ポートフォリオサイト" class="work__picItem">
+          </div>
+          <div class="work__text">
+            <h3 class="work__title">ポートフォリオサイト</h3>
+            <dl>
+              <dt>URL</dt>
+              <dd><a href="http://www.tayutoh.github.io/" target="_blank" rel="noopener noreferrer">http://www.tayutoh.github.io/</a></dd>
+            </dl>
+            <dl>
+              <dt>担当箇所</dt>
+              <dd>サイト設計・デザイン・コーディング・ロゴ作成</dd>
+            </dl>
+            <p>当ポートフォリオサイトです。CSSを使用したアニメーションとシンプルな構造で、閲覧しやすさを目指しました。</p>
+          </div>
         </div>
-        <div class="work__text">
-          <h3>その他</h3>
+        <div class="work__textCard">
+          <h3 class="work__title">その他</h3>
           <p>SESや社内サービス作成を中心としていたため、実績に載せられませんが以下のようなものを作成していました。</p>
           <ul>
-            <li>ゲーミフィケーションを取り入れたRPG風の社内目標管理システム（サイト設計・デザイン・コーディング・アバターのキャラクター提案・モンスターデザイン原案）</li>
-            <li>CMSサイト（リデザイン・コーディング・運用）</li>
-            <li>料理共有・交流サイト（コーディング）</li>
-            <li>冠婚葬祭業者向け管理システム（デザイン・コーディング）</li>
-            <li>地方向けテレビ用映像配信サービス（コーディング）</li>
-            <li>プロジェクト管理ツール（デザイン）</li>
-            <li>求人情報サイト（エンハンス・運用）</li>
+            <li class="work__textCardItem">ゲーミフィケーションを取り入れたRPG風の社内目標管理システム（サイト設計・デザイン・コーディング・アバターのキャラクター提案・モンスターデザイン原案）</li>
+            <li class="work__textCardItem">CMSサイト（リデザイン・コーディング・運用）</li>
+            <li class="work__textCardItem">料理共有・交流サイト（コーディング）</li>
+            <li class="work__textCardItem">冠婚葬祭業者向け管理システム（デザイン・コーディング）</li>
+            <li class="work__textCardItem">地方向けテレビ用映像配信サービス（コーディング）</li>
+            <li class="work__textCardItem">プロジェクト管理ツール（デザイン）</li>
+            <li class="work__textCardItem">求人情報サイト（エンハンス・運用）</li>
           </ul>
         </div>
       </section>
     </div>
   </div>
-  <footer>
+  <footer class="footer">
     <p class="made">Made by tayutoh</p>
     <p class="Licence"></p>
   </footer>

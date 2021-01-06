@@ -141,4 +141,5 @@ dist
 # Local History for Visual Studio Code
 .history/
 
-
+./oriImage/
+.DS_Store
